@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/* ce fichier est utilisé pour réinitialiser les styles par défaut du navigateur */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__background__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 189px;
+}
+
+.fourth-section__content__card h2, .second-section__content h2, .first-section__content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.footer__info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer__info ul li, .fourth-section__content__card__list li, .second-section__content p, .first-section__content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__background__accroche {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: italic;
+  line-height: 1;
+}
+
+.header__nav__content li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.header__background__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 189px;
+}
+
+.fourth-section__content__card h2, .second-section__content h2, .first-section__content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.footer__info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer__info ul li, .fourth-section__content__card__list li, .second-section__content p, .first-section__content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__background__accroche {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: italic;
+  line-height: 1;
+}
+
+.header__nav__content li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.header__nav__content li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__nav__content li a:visited {
+  color: #ffffff;
+}
+
+.first-section__content button, .second-section__content button, .header__nav__content li button {
+  color: #ffffff;
+  background-color: #B2D234;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 60px;
+  border-radius: 5px;
+}
+
+.second-section__content button, .header__nav__content li button {
+  background-color: #ffffff;
+  color: #B2D234;
+}
+
+.header__nav__content li button {
+  padding: 9px 30px;
+}
+
+.header__background__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 189px;
+}
+
+.fourth-section__content__card h2, .second-section__content h2, .first-section__content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.footer__info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer__info ul li, .fourth-section__content__card__list li, .second-section__content p, .first-section__content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__background__accroche {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: italic;
+  line-height: 1;
+}
+
+.header__nav__content li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.header__background__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 189px;
+}
+
+.fourth-section__content__card h2, .second-section__content h2, .first-section__content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.footer__info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer__info ul li, .fourth-section__content__card__list li, .second-section__content p, .first-section__content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__background__accroche {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: italic;
+  line-height: 1;
+}
+
+.header__nav__content li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.header__nav__content li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__nav__content li a:visited {
+  color: #ffffff;
+}
+
+.first-section__content button, .second-section__content button, .header__nav__content li button {
+  color: #ffffff;
+  background-color: #B2D234;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 60px;
+  border-radius: 5px;
+}
+
+.second-section__content button, .header__nav__content li button {
+  background-color: #ffffff;
+  color: #B2D234;
+}
+
+.header__nav__content li button {
+  padding: 9px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("img/Header-back.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.header__filtre {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(140deg, rgba(96, 160, 216, 0.8) 0, rgba(178, 210, 52, 0.8) 100%);
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 25px;
+  width: 95%;
+}
+.header__nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 55%;
+}
+.header__nav__content li {
+  list-style: none;
+}
+.header__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+.header__background__logo {
+  color: #ffffff;
+}
+.header__background__accroche {
+  color: #ffffff;
+}
+
+.first-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("img/background-first_section.png");
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+.first-section__content {
+  padding-left: 150px;
+  width: 80%;
+}
+.first-section__content h2 {
+  color: #B2D234;
+  margin-bottom: 30px;
+}
+.first-section__content p {
+  color: #606060;
+  margin-top: 24px;
+}
+.first-section__content button {
+  margin-top: 40px;
+}
+.first-section__img {
+  overflow: hidden;
+}
+.first-section__img img {
+  width: 130%;
+  height: auto;
+  z-index: 1;
+  transform: translateX(0);
+  margin-top: 0;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("img/ismael-trevino-NDyuR4Huig8-unsplash.png");
+}
+.second-section__content {
+  margin-left: 500px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(178, 210, 52, 0.8);
+  background-size: cover;
+  padding: 40px 70px;
+}
+.second-section__content h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.second-section__content p {
+  color: #ffffff;
+  margin-top: 24px;
+  text-align: center;
+}
+.second-section__content a {
+  color: #ffffff;
+}
+.second-section__content span {
+  font-weight: 600;
+}
+.second-section__content button {
+  margin-top: 40px;
+}
+
+.fourth-section {
+  height: 100vh;
+  background-image: url("img/louis-hansel-MlPD-AzZYMg-unsplash.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.fourth-section__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.fourth-section__content__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  padding: 25px 100px;
+}
+.fourth-section__content__card h2 {
+  color: #ffffff;
+}
+.fourth-section__content__card__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+}
+.fourth-section__content__card__list ul {
+  margin-top: 40px;
+}
+.fourth-section__content__card__list li {
+  color: #ffffff;
+  text-align: center;
+}
+.fourth-section__content .left {
+  background-color: rgba(178, 210, 52, 0.8);
+  margin-right: 10px;
+}
+.fourth-section__content .right {
+  background-color: rgba(96, 160, 216, 0.8);
+  margin-left: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 290px;
+  background-color: #B2D234;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.footer__logo {
+  width: 150px;
+  height: auto;
+}
+.footer__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__info h3 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.footer__info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.footer__info ul li {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

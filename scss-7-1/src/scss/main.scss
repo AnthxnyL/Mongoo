@@ -1,0 +1,196 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Components
+@import 'components/buttons';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+
+// Themes
+@import 'themes/theme';
+
+// Vendors
+@import 'vendors/bootstrap';
+
+
+
+.first-section {
+    height: 100vh;
+    width : 100%;
+    background-image: url('img/background-first_section.png');
+    @include flex(flex-start, center);
+    position : relative;
+
+    &__content {
+        padding-left: 150px;
+        width: 80%;
+;
+
+            h2 {
+                @extend %heading2;
+                color: $Green;
+                margin-bottom: 30px;
+            }
+
+            p {
+                @extend %body-text;
+                color: $Dark-grey;
+                margin-top: $Line-height-body;
+            }
+
+            button {
+                @extend %button-primary;
+                margin-top: 40px;
+            }
+    }
+
+    &__img{
+        overflow: hidden;
+
+        img{
+            width: 130%;
+            height: auto;
+            z-index: 1;
+            transform: translateX(0);
+            margin-top: 0;
+        }
+    }
+}
+
+.second-section {
+    @include flex(center, center, column);
+    height: 100vh;
+    background-image: url('img/ismael-trevino-NDyuR4Huig8-unsplash.png');
+
+    &__content {
+        margin-left: 500px;
+        width : 50%;
+        @include flex(center, center, column);
+        background-color: rgba($Green, 0.8);
+        background-size: cover;
+        padding: 40px 70px;
+
+        h2 {
+            @extend %heading2;
+            color: $White;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p {
+            @extend %body-text;
+            color: $White;
+            margin-top: $Line-height-body;
+            text-align: center;
+        }
+
+        a {
+            color: $White;
+
+        }
+        
+        span {
+            font-weight: $Font-semi-bold;
+        }
+
+        button {
+            @extend %button-secondary;
+            margin-top: 40px;
+        }
+    }
+}
+
+.fourth-section {
+    height: 100vh;
+    background-image: url('img/louis-hansel-MlPD-AzZYMg-unsplash.png');
+    background-size: cover;
+    @include flex(center, center);
+
+    &__content{
+
+        @include flex(center, center);
+    
+       
+
+        &__card{
+            @include flex(center, center, column);
+            height: 500px;
+            padding: 25px 100px;
+
+            h2 {
+                @extend %heading2;
+                color: $White;
+                
+            }
+
+            &__list {
+                @include flex(space-between, stretch);
+                width: 100%;
+
+                ul{
+                    margin-top: $Margin-40;
+                }
+
+                li {
+                    @extend %body-text;
+                    color: $White;
+                    text-align: center;
+                }
+            }
+        }
+
+        .left {
+            background-color: rgba($Green, 0.8);
+            margin-right: 10px;
+        }
+
+        .right {
+            background-color: rgba($Blue, 0.8);
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.footer {
+    width : 100%;
+    height: 290px;
+    background-color: $Green;
+    @include flex(space-around, center);
+
+    &__logo {
+        width : 150px;
+        height: auto;
+    }
+
+    &__info {
+        @include flex(center, center, column);
+       
+        h3{
+            @extend %heading3;
+            color: $White;
+            margin-bottom: $Margin-40;
+        }
+
+        ul {
+            @include flex(center, center, column);
+            list-style: none;
+
+            li {
+                @extend %body-text;
+                color: $White;
+            }
+        }
+    }
+
+}
