@@ -25,15 +25,37 @@
   font-weight: $Font-semi-bold;
   padding: 14px 60px;
   border-radius: 5px;
+  box-shadow: $Shadow-button;
 }
 
 %button-secondary {
   @extend %button-primary;
   background-color: $White;
   color : $Green;
+  box-shadow: $Shadow-button;
 }
 
 %button-header {
   @extend %button-secondary;
   padding: 9px 30px;
+  font-size: 15px;
+  box-shadow: none;
+}
+
+%form-section {
+  @include flex(center, flex-start, column);
+  width : 100%;
+  height: auto;
+
+  label {
+      @extend %heading3;
+      color: $Green;
+  }
+
+  input {
+      width: 100%;
+      height: 45px;
+      border: 1px solid $Dark-grey;
+      margin-top: 8px;
+  }
 }
