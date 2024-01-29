@@ -1,0 +1,364 @@
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Components
+@import 'components/buttons';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/home';
+
+// Themes
+@import 'themes/theme';
+
+// Vendors
+@import 'vendors/bootstrap';
+
+
+
+.first-section {
+    height: 100vh;
+    width : 100%;
+    background-image: url('img/background-first_section.png');
+    @include grid(1fr 1fr, 1fr, 0px);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        grid-column: 1/3;
+        margin : 150px;
+        z-index: 1;
+        width: 100%;
+        
+
+            h2 {
+                @extend %heading2;
+                color: $Green;
+                margin-bottom: 30px;
+            }
+
+            p {
+                @extend %body-text;
+                color: $Dark-grey;
+                margin-top: $Line-height-body;
+                width : 35%;
+            }
+
+            button {
+                @extend %button-primary;
+                margin-top: 40px;
+            }
+    }
+
+    &__img{
+        grid-column: 2;
+        grid-row: 1;
+
+        img{
+            z-index: 0;
+            position : absolute;
+            width: 65%;
+            height: auto;
+            top : 0;
+        }
+    }
+}
+
+.second-section {
+    @include flex(center, center, column);
+    height: 100vh;
+    background-image: url('img/ismael-trevino-NDyuR4Huig8-unsplash.png');
+    background-size: cover;
+
+    &__content {
+        margin-left: 500px;
+        width : 50%;
+        @include flex(center, center, column);
+        background-color: rgba($Green, 0.8);
+        background-size: cover;
+        padding: 40px 70px;
+
+        h2 {
+            @extend %heading2;
+            color: $White;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p {
+            @extend %body-text;
+            color: $White;
+            margin-top: $Line-height-body;
+            text-align: center;
+        }
+
+        a {
+            color: $White;
+
+        }
+        
+        span {
+            font-weight: $Font-semi-bold;
+        }
+
+        button {
+            @extend %button-secondary;
+            margin-top: 40px;
+        }
+    }
+}
+
+.fourth-section {
+    height: 100vh;
+    background-image: url('img/louis-hansel-MlPD-AzZYMg-unsplash.png');
+    background-size: cover;
+    @include flex(center, center);
+
+    &__content{
+
+        @include flex(center, center);
+    
+       
+
+        &__card{
+            @include flex(flex-start, center, column);
+            height: 400px;
+            padding: 25px 150px;
+            margin: 140px 40px;
+            
+            h2 {
+                @extend %heading2;
+                color: $White;
+                
+            }
+            
+            &__list {    
+                @include flex(space-between, stretch);
+                width: 100%;
+
+                ul{
+                    margin-top: $Margin-40;
+                }
+
+                li {
+                    @extend %body-text;
+                    color: $White;
+                    text-align: center;
+                }
+            }
+        }
+
+        .left {
+            background-color: rgba($Green, 0.8);
+            margin-right: 10px;
+        }
+
+        .right {
+            background-color: rgba($Blue, 0.8);
+            margin-left: 10px;
+        }
+    }
+
+}
+
+
+.third-section {
+    padding: 80px 150px;
+    height: auto;
+    background-image: url('img/Grille\ de\ répétition\ 2.png');
+    background-position: center;
+    background-size: cover;
+
+    &__block-top {
+        @include flex(center, center, column);
+        height: auto;
+        width: 100%;
+
+        &__title {
+            @extend %heading2;
+            color: $Green;
+            margin-bottom: $Margin-40;
+        }
+
+        &__content{
+            @extend %body-text;
+            color: $Dark-grey;
+            text-align: center;
+            width: 65%;
+        }
+    }
+
+}
+
+
+.third-section__block-bottom {
+    margin-top: 80px;
+    @include grid(1fr 1fr, 1fr, 50px);
+    
+    &__menu {
+        grid-column: 1;;
+        @include flex(center, flex-start, column);
+
+
+        &__card {
+            @include flex(center,flex-start, column);
+            margin-top: 50px;
+
+            width: 100%;
+
+            &__title {
+                @include flex(space-between, center);
+                @extend %heading3;
+                color: $Green;
+                width: 100%;
+            }
+
+            p{
+                @extend %body-text;
+                color: $Dark-grey;
+                margin-top: 12px;
+            }
+
+        }
+    }
+}
+
+.check {
+    outline: 1px solid $Green;
+    padding: 12px;
+}
+
+.third-section__block-right{
+    grid-column: 2;
+    @include flex(center, center, column);
+
+    &__subtitle {
+        @extend %italic-text;
+        transform: rotate(-9deg);
+
+        .green {
+            color: $Green;
+        }
+
+        .blue {
+            color: $Blue;
+        }
+    }
+
+    p {
+        @extend %body-text;
+        color: $Dark-grey;
+        text-align: center;
+        width: 80%;
+        margin-top: 90px;
+    }
+
+    button {
+        @extend %button-primary;
+        margin-top: 90px;
+    }
+}
+
+.fifth-section{
+    margin: 80px 0;
+    height: 100vh;
+    @include grid (1fr 1fr, 1fr, 64px);
+    background-image: url('img/background_Section5.png');
+    background-size: repeat;
+
+    &__left-content {
+        grid-column: 1;
+        margin-left: 40px;
+        @include flex(center, center, column);
+        
+
+        &__img {
+            position: relative;
+            background-image: url('img/anh-nguyen-_Uqj5BQb-mw-unsplash.png');
+            background-size: cover;
+            background-position: center;
+            width: 530px;
+            height: 530px;
+
+        }
+
+        .horizontal-bar {
+            position: absolute;
+            top : calc(550px/2 - 4px);
+            height: 8px;
+            background-color: $White;
+            width: 100%;   
+        }
+
+        .vertical-bar {
+            width: 8px;
+            background-color: $White;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    &__right-content {
+        padding-right: 120px;
+        grid-column: 2;
+        @include flex(center, flex-start, column);
+
+        &__text{
+            width : 100%;
+            
+            h2 {
+                @extend %heading2;
+                color: $Green;
+                margin-bottom: 18px;
+            }
+
+            p {
+                @extend %body-text;
+                color: $Dark-grey;
+            }
+        }
+
+        .form {
+            @include grid(1fr 1fr, 1fr, 25px);
+            width: 100%;
+            margin-top: 30px;
+
+
+            &__section {
+                @extend %form-section;
+
+            }
+
+            .email {
+                grid-column: 1 / 3;
+            }
+
+            .more {
+                grid-column: 1 / 3;
+                input{
+                    height: 200px;
+                }
+            }
+        }
+        
+        button {
+            align-self: center;
+            @extend %button-primary;
+            margin-top: $Margin-40;
+            text-align: center;
+        }
+        
+    }
+}

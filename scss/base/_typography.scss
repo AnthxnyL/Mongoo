@@ -1,0 +1,60 @@
+
+@import '../abstracts/variables';
+
+
+// Titre de premier niveau
+%heading1{
+  font-family: $Font;
+  font-size: $Font-Size-h1;
+  font-weight: $Font-medium;
+  line-height: $Line-height-h1;
+}
+
+// Titre de deuxième niveau
+%heading2 {
+  font-family: $Font;
+  font-size: $Font-Size-h2;
+  font-weight: $Font-semi-bold;
+  line-height: $Line-height-h2;
+}
+
+// Titre de troisième niveau
+%heading3 {
+  font-family: $Font;
+  font-size: $Font-Size-h3;
+  font-weight: $Font-medium;
+  line-height: $Line-height-h3;
+}
+
+// body
+%body-text {
+  font-family: $Font;
+  font-size: $Font-body;
+  font-weight: $Font-regular;
+  line-height: $Line-height-body;
+}
+
+// texte en italique
+%italic-text {
+  font-family: $Font;
+  font-size: $Font-special;
+  font-weight: $Font-italic;
+  line-height: 1;
+}
+
+// texte en gras
+%body-text-semi-bold{
+  font-family: $Font;
+  font-size: $Font-body;
+  line-height: $Line-height-body;
+  font-weight: $Font-semi-bold;
+}
+
+%header-text {
+  font-family: $Font;
+  font-size : $Font-body;
+  line-height: $Line-height-body;
+  font-weight: $Font-light;
+}
+
+
